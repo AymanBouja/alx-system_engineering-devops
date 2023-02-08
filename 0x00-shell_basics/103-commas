@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | awk '{if (NF==1) printf "/%s,", $0; else printf "%s,", $0} END {print ""}' | sort -k1.2 | sed 's/,$/\n/'
+ls -map
